@@ -43,11 +43,5 @@ vector<int> fact(int n){
 }
 
 int main(){
-	int n;
-	cin >> n;
-	vector<int>nge  = fact(n);
-	for (int i = 0; i < nge.size(); ++i)
-	{
-		cout << nge[i] << " ";
-	}
+	
 }
