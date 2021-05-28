@@ -11,7 +11,7 @@ int main(){
 	int to_find;
 	cin>>to_find;
 	int lo = 0,hi = n-1;
-	while(hi - lo > 2){
+	while(hi - lo > 1){
 		int mid  = (hi + lo) / 2;
 		if(v[mid] < to_find){
 			lo = mid + 1;
@@ -19,7 +19,8 @@ int main(){
 		else{
 			hi = mid;
 		}
-		if(v[lo]  == to_find){
+	}
+	if(v[lo]  == to_find){
 			cout<<lo<<"\n";
 		}
 		else if(v[hi] == to_find){
@@ -28,5 +29,4 @@ int main(){
 		else{
 			cout<<"Not Found"<<"\n";
 		}
-	}
 }
